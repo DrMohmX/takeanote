@@ -7,10 +7,9 @@ theme: jekyll-theme-dinky
 name: TakeANote
 
 # Short bio or description (displayed in the header)
-description: A research project, supports AI in Azerbaijan
+description: Just take a Note on Go!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/DrMohmX/web/main/images/logo.png
 
 #
 # Flags below are optional
