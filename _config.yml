@@ -4,7 +4,7 @@ theme: jekyll-theme-dinky
 #
 
 # Name of your site (displayed in the header)
-name: TakeANote
+name: Take A Note
 
 # Short bio or description (displayed in the header)
 description: Just take a Note on Go!
