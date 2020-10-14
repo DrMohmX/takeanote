@@ -14,11 +14,8 @@ author: Rustam Karimov
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-      Author's home: "https://www.takeanote.info/aboutme"
+  About Me: "aboutme"        
+  Author's home: "https://www.takeanote.info/aboutme"
 
 # --- Logo --- #
 
