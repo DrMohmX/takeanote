@@ -22,6 +22,7 @@ body {
   {% endif %}
 }
 
+
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
@@ -317,7 +318,7 @@ img.my-image {
   position: absolute;
   left: 50%;
   width: 3.125rem;
-  /* margin-top: 3.1rem; */
+  margin-top: 3.1rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -333,7 +334,7 @@ img.my-image {
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
   margin-left: 50%;
-margin-top: 50%;
+margin-top: 20%;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, .8);
@@ -344,8 +345,7 @@ margin-top: 50%;
 .navbar-custom .avatar-container .avatar-img {
   width: 100%;
   display: block;
-  /*
-  margin-bottom: 3.6rem; */
+  margin-bottom: 3.6rem;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
   {% endunless %}
