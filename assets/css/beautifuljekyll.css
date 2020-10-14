@@ -317,7 +317,7 @@ img.my-image {
   position: absolute;
   left: 50%;
   width: 3.125rem;
-  margin-top: 3.1rem;
+  /* margin-top: 3.1rem; */
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
