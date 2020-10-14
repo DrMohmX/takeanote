@@ -668,6 +668,15 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-weight: 300;
   margin: 0.625rem 0 0;
 }
+.intro-header .page-heading-main .page-subheading-main {
+  font-size: 1.6875rem;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0.625rem 0 0;
+  text-align: center;
+}
 .intro-header .post-heading .post-subheading {
   margin-bottom: 1.25rem;
 }
