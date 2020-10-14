@@ -711,6 +711,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
    .intro-header .page-heading-main h1 {
     font-size: 15rem;
     margin-top: 0;
+    text-align: center;
   }
   .intro-header .post-heading h1 {
     font-size: 3.125rem;
