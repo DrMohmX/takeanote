@@ -342,6 +342,8 @@ margin-top: 20%;
 }
 .navbar-custom .avatar-container .avatar-img {
   width: 100%;
+  display: block;
+  margin-bottom: 3.6rem;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
   {% endunless %}
