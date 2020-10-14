@@ -21,6 +21,47 @@ body {
   background-attachment: fixed;
   {% endif %}
 }
+
+/* --- DARK MODE --- */
+body.page-dark-mode {
+  color: {{ site.dark-text-col | default: "#404040" }};
+  background-color: {{ site.dark-page-col | default: "#FFFFFF" }};
+}
+page-dark-mode #change-skin {
+  background: black;
+}
+/* @media (max-width: 1199px) */
+
+#change-skin {
+  top: 0.85rem;
+  right: 5rem;
+}
+#changes-skin {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #ccc
+  border-radius:1rem;
+  font-size: 0.8125rem;
+  user-select: none;
+}
+.page-dark-mode {
+  color: #e4e6eb;
+  background-color: #000;
+
+}
+.page-dark0mode #change-skin .dark-mode {
+  display: block;
+
+}
+.page-dark0mode #change-skin .light-mode {
+  display: none;
+
+}
+#change-skin .skin-btn {
+  transition: margin 0.3s ease-in-out;
+  margin: 0 0.8rem 0 0;
+}
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
