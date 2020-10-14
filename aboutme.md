@@ -4,9 +4,9 @@ title: About me
 subtitle:  A little information about me
 ---
 
-My name is Rustam Karimov. I hve a great aility in Linux Administrationing
+My name is Rustam Karimov. I have a great ability in Linux Administration!
 
-- You'll learn Red Hat tips for exam and daily administartion life.
+- You'll learn Red Hat tips for exam and daily administration life.
 
 ### My story
 
