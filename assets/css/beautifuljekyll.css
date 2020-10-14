@@ -353,7 +353,7 @@ margin-top: 20%;
   }
 
   .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
-    width: 100%;
+    width: 10%;
     {% unless site.round-avatar == false %}
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
