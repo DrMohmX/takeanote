@@ -1,15 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle:  A little information about me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Rustam Karimov. I hve a great aility in Linux Administrationing
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+- You'll learn Red Hat tips for exam and daily administartion life.
 
 ### My story
 
