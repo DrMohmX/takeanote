@@ -331,7 +331,7 @@ img.my-image {
 
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
-  margin-left: -50%;
+  margin-left: 50%;
 margin-top: 20%;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
