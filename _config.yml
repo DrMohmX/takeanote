@@ -14,7 +14,7 @@ author: Rustam Karimov
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Author's home: "https://www.takeanote.info/aboutme"
+  Author's home: "aboutme"
   Parts:
           - RED HAT: "redhat"
 
