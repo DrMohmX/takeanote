@@ -12,7 +12,7 @@ comments: true
 ## Change the file context (fcontext) 
 We can change the file context **persistenty** and **temporary**. Temporary means for one usage only, that will be restored by the next reboot or the usage of `restorecon` command. But persistantly will remain even after reboot and `restorecon` command.
 
-### Changing the fcontext of the file/dir **temprorary!**
+### Changing the fcontext of the file/dir **temporary!**
 
 1. Add a directory:
 ``` bash
@@ -142,7 +142,7 @@ restorecon -vR /root/test2
 
 ## Delete the file context (fcontext)
 
-### Deleting the fcontext of the file/dir that was created **temprorary!**
+### Deleting the fcontext of the file/dir that was created **temporary!**
 
 > **NOTE!** Delete the fcontext type means to relabel a file/directory to its original state of SELinux type. Original state was was up to the parent of **default_t**!
 
