@@ -14,13 +14,11 @@ We can change the file context **persistenty** and **temporary**. Temporary mean
 
 ### Changing the fcontext of the file/dir **temprorary!**
 
-I will show you first how to add a file using `touch` command and see the the user, role and type of the file using `ls -lZ` command.
-
-1. Add a directory
+1. Add a directory:
 ``` bash
 mkdir /root/test
 ```
-2. Check out the directory properties (SELinux content)
+2. Check out the directory properties (SELinux content):
 ``` bash
 ls -lZd /root/test
 ```
@@ -28,7 +26,7 @@ ls -lZd /root/test
 as we see the context user (**unconfined_u**), the context role (**object_r**) and context type (**admin_home_t**). For RHEL 8 exam is enoght to know only about context type, the other two (user and role) are out of the scope. 
 > **REMEMBER!** The file/dir inherits the SELinux content of the parent dir. But if you create file/dir under the root it will take **default_t** fcontext type.
 
-3. Now it's time to change the file context (fcontext) of our previously created directory /root/test
+3. Now it's time to change the file context (fcontext) of our previously created directory /root/test:
 ``` bash
 #Change only the directory fcontext
 #-v - verbosity
@@ -46,7 +44,7 @@ chcon -vRt httpd_sys_content_t /root/test/
 ```
 ![](https://i.imgur.com/58V5Dw7.png)
 
-4. Check out the directory properties (SElinux Content) again.
+4. Check out the directory properties (SElinux Content) again:
 ``` bash
 ls -lZd /root/test
 ```
