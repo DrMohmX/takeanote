@@ -26,7 +26,7 @@ comments: true
 * Process script inputs ($1, $2, etc.)
 * Processing output of shell commands within a script
 * Processing shell command exit codes
-* 
+
 ### Operate running systems
 
 * Boot, reboot, and shut down a system normally
