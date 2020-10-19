@@ -32,7 +32,8 @@ as we see the context user (**unconfined_u**), the context role (**object_r**) a
 #-v - verbosity
 #-t - fcontext type
 chcon -vt httpd_sys_content_t /root/test/
-
+```
+``` bash
 # Change recursively all the files under ../test directory (-R switch)
 #-v - verbosity
 #-t - fcontext type
