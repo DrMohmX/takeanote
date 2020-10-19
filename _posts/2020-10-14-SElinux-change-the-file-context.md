@@ -9,7 +9,7 @@ comments: true
 
 ## SELinux
 
-## Change the file context type label (fcontext) 
+## Change the file context type (fcontext) 
 We can change the file context **persistenty** and **temporary**. Temporary means for one usage only, that will be restored by the next reboot or the usage of `restorecon` command. But persistantly will remain even after reboot and `restorecon` command.
 
 ### Changing the fcontext of the file/dir **temporary!**
