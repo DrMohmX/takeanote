@@ -111,7 +111,7 @@ and the file content of ./test2 directory
 
 Oops! Nothing changed?! It's still **admin_home_t** under "type" column. That's because we should DO RESTORE MANUALLY after `semanage fcontext -a -t` command.
 
-But before we restore the fcontext to the changed one, let's check if there is any other *pending* fcontext on the system (computer).
+But before we restore the fcontext, let's check if there is any other fcontext that has been changed from default.
 
 ``` bash
 semanage fcontext -Cl
@@ -143,7 +143,7 @@ restorecon -vR /root/test2
 
 ### Deleting the fcontext of the file/dir that was created **temporary!**
 
-> **NOTE!** Delete the fcontext type means to relabel a file/directory to its original state of SELinux type. Original state was was up to the parent of **default_t**!
+> **NOTE!** Delete the fcontext type means to relabel a file/directory to its original state of SELinux type. Original state was up to the parent of **default_t**!
 
 1. Just reboot your computer or simply use `restorecon -v /path/to/dir/or/file`
 
