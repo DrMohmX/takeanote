@@ -11,7 +11,7 @@ comments: true
 
 ## Booleans - **List and Configure**
 
-Booleans allow some SELinux policies to be changed at runtime, without interaction(changes) in polies.
+Booleans allow some SELinux policies to be changed at runtime and persistentle, without interaction(changes) of polices.
 
 ## 1. List the Booleans
 
