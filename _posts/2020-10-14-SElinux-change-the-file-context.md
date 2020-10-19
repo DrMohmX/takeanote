@@ -200,7 +200,7 @@ ___
 1. **Temporary** - `chcon -t <fcontext type> -v [-R] /path/to/file/or/dir`
 2. **Persistently** - `semanage fcontext -a [-m] -t <fcontext type> "/path/to/file/or/dir(/.*)?"`
 
-## Delete fcontext type (back to original) and restore it.
+## Delete fcontext type (back to original):
 1. **Temporary** - *either* reboot the system *or* `restorecon -v /path/to/file/or/dir`
 2. **Persistently** - `semanage fcontext -d "/path/to/file/or/dir(/.*)?"`
 
@@ -210,3 +210,5 @@ ___
 
 
 Thank you!
+
+> [color=#031b6b] [name=Rustam Karimov]
