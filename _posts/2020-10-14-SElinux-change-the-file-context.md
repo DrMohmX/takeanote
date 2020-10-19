@@ -210,5 +210,3 @@ ___
 
 
 Thank you!
-
-> [color=#031b6b] [name=Rustam Karimov]
