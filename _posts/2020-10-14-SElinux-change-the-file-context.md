@@ -161,7 +161,7 @@ So you see it's relabeled from **httpd_sys_content_t** to **admin_home_t** back!
 #-d - delete the fcontext
 semanage fcontext -d "/root/test2(/.*)?"
 ```
-As you see, nothing changed yet.
+	As you see, nothing changed yet.
 ![](https://i.imgur.com/0knf6Rw.png)
 
 2. After we deleted the fcontext (returning to the original state), it's time to restore the fcontext.
