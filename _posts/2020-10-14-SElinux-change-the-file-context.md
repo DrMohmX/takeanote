@@ -23,10 +23,10 @@ mkdir /root/test
 ls -lZd /root/test
 ```
 ![](https://i.imgur.com/hZuwR02.png)
-as we see the context user (**unconfined_u**), the context role (**object_r**) and context type (**admin_home_t**). For RHEL 8 exam is enoght to know only about context type, the other two (user and role) are out of the scope. 
+as we see the context user (**unconfined_u**), the context role (**object_r**) and context type (**admin_home_t**). For RHEL 8 exam is enough to know only about context type, the other two (user and role) are out of the scope of RHEL exam. 
 > **REMEMBER!** The file/dir inherits the SELinux content of the parent dir. But if you create file/dir under the root it will take **default_t** fcontext type.
 
-3. Now it's time to change the file context (fcontext) of our previously created directory /root/test:
+3. Now it's time to change the file context (fcontext) of our previously created directory ./test:
 ``` bash
 #Change only the directory fcontext
 #-v - verbosity
@@ -44,7 +44,7 @@ chcon -vRt httpd_sys_content_t /root/test/
 ```
 ![](https://i.imgur.com/58V5Dw7.png)
 
-4. Check out the directory properties (SElinux Content) again:
+4. Check out the directory properties (SElinux Content) again!:
 ``` bash
 ls -lZd /root/test
 ```
@@ -54,7 +54,7 @@ ls -lZd /root/test
 > **REMEMBER!** If you mistype the fcontext type, it fails with *Invalid Argument* error! You should be careful!
 > ![](https://i.imgur.com/zMcXuXS.png)
 
-As you see, we have changed the filecontext of the directory from **admin_home_t** to **httpd_sys_content_t**. But remember, this changes are only temporary, after the reboot or `restorecon` it will be changed to admin_home_t fcontext type again!
+As you noticed, we have changed the fcontext of the directory from **admin_home_t** to **httpd_sys_content_t**. But remember, these changes are only temporary, after the reboot or using `restorecon`,it will be changed to admin_home_t fcontext type back again!
 
 
 
@@ -73,7 +73,7 @@ ls -lZd /root/test2
 ```
 ![](https://i.imgur.com/JSREou2.png)
 
-3. Let's add some empty content into the ./test2 directory:
+3. Let's add 3 files (a,b,c) under the ./test2 directory:
 ``` bash
 # {} - can be used to manipulate multiple files at once
 touch /root/test2/{a,b,c}
@@ -87,11 +87,10 @@ ls -lZ /root/test2/
 ```
 ![](https://i.imgur.com/0BhdCcm.png)
 
-There is 3 files with the same fcontext type as their parent (./test2 dir). Nice.
+There is 3 files with the same fcontext type as their parent (./test2 dir). Sweet!
 
 5. Now it's time to change the file context (fcontext) of our previously created directory /root/test2:
 ``` bash
-#Change only the directory fcontext
 #-a - add fcontext if it's not added yet. If it's added before, use "-m"
 #-t - fcontext type
 #"/root/test2(.*)?" - includes the files under ./test2 directory
@@ -110,18 +109,18 @@ and the file content of ./test2 directory
 ![](https://i.imgur.com/vWCT0Pu.png)
 
 
-Oops! Nothing changed?! It's still **admin_home_t**. That's because we should DO RELABLE MANUALLY after `semanage fcontext -a -t` command.
+Oops! Nothing changed?! It's still **admin_home_t** under "type" column. That's because we should DO RESTORE MANUALLY after `semanage fcontext -a -t` command.
 
-But before we relabel the fcontext, let's check is there any *pending* fcontext on the system (computer).
+But before we restore the fcontext to the changed one, let's check if there is any other *pending* fcontext on the system (computer).
 
 ``` bash
 semanage fcontext -Cl
 ```
 ![](https://i.imgur.com/pMY3lcu.png)
 
-So you see, we have changed the fcontext type of ./test2 directory, but it's not applied yet. 
+So you see, we have only one pending fcontext and it is previously changed the fcontext type of ./test2 directory. However, it's not restored (applied) yet. 
 
-7. To relabel (re-apply the fcontext) use:
+7. To restore (re-apply the fcontext) use:
 
 ``` bash
 ### Will ONLY change the fcontext type of the directory, NOT THE FILES/DIRS under it! 
