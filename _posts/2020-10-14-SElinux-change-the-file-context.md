@@ -33,14 +33,14 @@ as we see the context user (**unconfined_u**), the context role (**object_r**) a
 #-t - fcontext type
 chcon -vt httpd_sys_content_t /root/test/
 ```
-
 ``` bash
-# Change recursively all the files uner ../test directory (-R switch)
+# Change recursively all the files under ../test directory (-R switch)
 #-v - verbosity
 #-t - fcontext type
 #-R - recursively
 chcon -vRt httpd_sys_content_t /root/test/
 ```
+
 ![](https://i.imgur.com/58V5Dw7.png)
 
 4. Check out the directory properties (SElinux Content) again!:
