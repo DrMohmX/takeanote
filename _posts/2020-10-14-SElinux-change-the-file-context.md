@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SELinux Management
-subtitle: Create, Delete, Restore SELinux fcontext
+subtitle: Create and Restore SELinux fcontext
 tags: [rhel, exam, selinux]
 gh-badge: [star, fork, follow]
 comments: true
@@ -138,11 +138,11 @@ restorecon -vR /root/test2
 ```
 ![](https://i.imgur.com/QYYYZD8.png)
 
-## Delete the file context (fcontext)
+## Restore the file context (fcontext)
 
-### Deleting the fcontext of the file/dir that was created **temporary!**
+### Restoring the fcontext of the file/dir that was created **temporary!**
 
-> **NOTE!** Delete the fcontext type means to relabel a file/directory to its original state of SELinux type. Original state was up to the parent of **default_t**!
+> **NOTE!** restore the fcontext type means to relabel a file/directory to its original SELinux context. Original state was defined by a parent directory or it's **default_t**!
 
 1. Just reboot your computer or simply use `restorecon -v /path/to/dir/or/file`
 
@@ -151,19 +151,18 @@ restorecon -v /root/test
 ```
 ![](https://i.imgur.com/68QqAKb.png)
 
-So you see it's relabeled from **httpd_sys_content_t** to **admin_home_t** back! Delete the fcontext
+So you see it's relabeled from **httpd_sys_content_t** to **admin_home_t** back! It's completely restored to the oroginal state!
+### Restoring the fcontext of the file/dir that was created **persistently!**
 
-### Deleting the fcontext of the file/dir that was created **persistently!**
-
-1. To delete (return to the original state):
+1. To restore (return to the original state):
 ``` bash
-#-d - delete the fcontext
+#-d - restore the fcontext
 semanage fcontext -d "/root/test2(/.*)?"
 ```
 	As you see, nothing changed yet.
 ![](https://i.imgur.com/0knf6Rw.png)
 
-2. After we deleted the fcontext (returning to the original state), it's time to restore the fcontext.
+2. After we restored the fcontext (returning to the original state), it's time to restore the fcontext.
 ``` bash
 ### Will ONLY change the fcontext type of the directory, NOT THE FILES/DIRS under it! 
 #It's important
@@ -195,11 +194,11 @@ ___
 1. **Temporary** - `chcon -t <fcontext type> -v [-R] /path/to/file/or/dir`
 2. **Persistently** - `semanage fcontext -a [-m] -t <fcontext type> "/path/to/file/or/dir(/.*)?"`
 
-## Delete fcontext type (back to original):
+## Restore to the default SELinux security contexts:
 1. **Temporary** - *either* reboot the system *or* `restorecon -v /path/to/file/or/dir`
 2. **Persistently** - `semanage fcontext -d "/path/to/file/or/dir(/.*)?"`
 
-## Restore fcontext type after changing or deleting (back to original) it:
+## Restore fcontext type after changes:
 1. **Temporary** - no need, it's automatically restore its fcontext type untill the next boot or untill the usage of`restorecon` command.
 2. **Persistently** - `restorecon -v [-R] /path/to/file/or/dir`
 
