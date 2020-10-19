@@ -1,15 +1,7 @@
 ---
 layout: post
-title: Red Hat Objective List
-subtitle: Red Hat Objectives
-tags: [rhel, exam]
-gh-badge: [star, fork, follow]
-comments: true
----
----
-layout: post
-title: Red Hat Objective List
-subtitle: Red Hat Objectives
+title: SELinux Management
+subtitle: Create, Delete, Restore SELinux FContext
 tags: [rhel, exam]
 gh-badge: [star, fork, follow]
 comments: true
