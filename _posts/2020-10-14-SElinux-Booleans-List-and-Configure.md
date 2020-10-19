@@ -124,7 +124,6 @@ semanage boolean -m httpd_can_network_connect -0
 ![](https://i.imgur.com/Y1q6TJc.png)
 
 # Thank you!
-# 
 
 
 
