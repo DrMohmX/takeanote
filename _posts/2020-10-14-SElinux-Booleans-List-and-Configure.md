@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 comments: true
 ---
 
-# SELinux
+## SELinux
 
 ## Booleans - **List and Configure**
 
@@ -123,7 +123,7 @@ semanage boolean -m httpd_can_network_connect -0
 ```
 ![](https://i.imgur.com/Y1q6TJc.png)
 
-# Thank you!
+## Thank you!
 
 
 
