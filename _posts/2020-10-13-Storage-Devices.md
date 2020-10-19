@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chapter 1.1 - Storage Management
-subtitle: 1/2 - Storage Devices and Partitions.
+title: Storage Management
+subtitle: Storage Devices and Partitions.
 tags: [rhel, exam, book, Asghar]
 gh-badge: [star, fork, follow]
 comments: true
