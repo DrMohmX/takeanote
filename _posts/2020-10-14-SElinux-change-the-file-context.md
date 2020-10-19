@@ -160,7 +160,6 @@ So you see it's relabeled from **httpd_sys_content_t** to **admin_home_t** back!
 ``` bash
 #-d - delete the fcontext
 semanage fcontext -d "/root/test2(/.*)?"
-
 ```
 As you see, nothing changed yet.
 ![](https://i.imgur.com/0knf6Rw.png)
