@@ -189,7 +189,7 @@ restorecon -vR /root/test2
 
 As you see now from the screenhot, both directories and files returned to the original fcontext SELinux state. (type: admin_home_t)
 
-# Summary
+## Summary
 ___
 
 ## Change fcontext type:
