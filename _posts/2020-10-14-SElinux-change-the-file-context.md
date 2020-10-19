@@ -1,15 +1,15 @@
 ---
 layout: post
 title: SELinux Management
-subtitle: Create, Delete, Restore SELinux FContext
-tags: [rhel, exam]
+subtitle: Create, Delete, Restore SELinux fcontext
+tags: [rhel, exam, selinux]
 gh-badge: [star, fork, follow]
 comments: true
 ---
 
 # SELinux
 
-## Change the file context (fcontext) 
+## Change the file context type label (fcontext) 
 We can change the file context **persistenty** and **temporary**. Temporary means for one usage only, that will be restored by the next reboot or the usage of `restorecon` command. But persistantly will remain even after reboot and `restorecon` command.
 
 ### Changing the fcontext of the file/dir **temporary!**
