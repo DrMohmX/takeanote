@@ -28,15 +28,14 @@ as we see the context user (**unconfined_u**), the context role (**object_r**) a
 
 3. Now it's time to change the file context (fcontext) of our previously created directory ./test:
 ``` bash
-#Change only the directory fcontext
+# Change only the directory fcontext
 #-v - verbosity
 #-t - fcontext type
 chcon -vt httpd_sys_content_t /root/test/
 ```
 
 ``` bash
-
-### Change recursively all the files uner ../test directory (-R switch)
+# Change recursively all the files uner ../test directory (-R switch)
 #-v - verbosity
 #-t - fcontext type
 #-R - recursively
