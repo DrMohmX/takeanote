@@ -37,7 +37,7 @@ On the screenshot above, I used the `head` command to shorten the output. (the f
 
 ---
 
-### b. To **show the current status** of all or specific booleans existing on the system, use:
+### b. To **show the current state** of all or specific booleans existing on the system, use:
 
 ``` bash
 #-a - all
@@ -90,7 +90,7 @@ setsebool -P httpd_can_network_connect on
 #Prohibit the httpd service to connect to the network.
 setsebool -P httpd_can_network_connect off
 ```
-Before we run those commands, let's check the default state of **httpd_can_network_connect** boolean. But because we cannot list the default state using `getsebool httpd_can_network_connect`, we probably use `semanage boolean -l | grep httpd_can_network_connect | head -n 1`:
+Before we run those commands, let's check the default state of **httpd_can_network_connect** boolean. But because we cannot list the default state using `getsebool httpd_can_network_connect`, we definitely use `semanage boolean -l | grep httpd_can_network_connect | head -n 1`:
 
 ![](https://i.imgur.com/h3nJMCK.png)
 > red arrow - current state, blue arrow - default state
