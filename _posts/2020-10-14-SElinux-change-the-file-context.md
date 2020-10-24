@@ -117,7 +117,7 @@ semanage fcontext -Cl
 ```
 ![](https://i.imgur.com/pMY3lcu.png)
 
-So you see, we have only one pending fcontext and it is previously changed the fcontext type of ./test2 directory. However, it's not restored (applied) yet. 
+So you see, we have only one customized fcontext and it is previously changed the fcontext type of ./test2 directory. However, it's not restored (applied) yet. 
 
 7. To restore (re-apply the fcontext) use:
 
