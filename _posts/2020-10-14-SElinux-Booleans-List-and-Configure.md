@@ -78,7 +78,7 @@ setsebool httpd_can_network_connect off
 ![](https://i.imgur.com/s6Ri9HM.png)
 > REMEMBER! It does not change the DEFAULT STATE at all.
 
-2. To enable or disable boolean **persistently** (persistently means that the current state will be copied to the default state and remain peristent):
+2. To enable or disable boolean **persistently** (persistently means that the current state will be copied to the default state and remain persistant):
 
 ``` bash
 #to enable (on) the boolean persistently.
