@@ -195,26 +195,9 @@ ___
 2. **Persistently** - `semanage fcontext -a [-m] -t <fcontext type> "/path/to/file/or/dir(/.*)?"`
 
 ## Restore to the default SELinux security contexts:
-1. **Temporary** - *either* reboot the system *or* `restorecon -v /path/to/file/or/dir`
+1. **Temporary** - `restorecon -v /path/to/file/or/dir`
 2. **Persistently** - `semanage fcontext -d "/path/to/file/or/dir(/.*)?"`
 
-## Restore fcontext type after changes:
-1. **Temporary** - no need, it's automatically restore its fcontext type untill the next boot or untill the usage of`restorecon` command.
-2. **Persistently** - `restorecon -v [-R] /path/to/file/or/dir`
 
-### P.S.
-
-You can change the *fcontext* temporary or persistently, depends on the situation. If you don't want to lose the original (default) fcontext you will probably use temporary method:
-
-**temporary method** -- To **change (rewrite)** the fcontext of the file or dir ***temporary***. (NOTE! It won't change the default fcontext of the file or dir found in /etc/selinux/targeted/contexts/files/file_contexts.local), use:
-
-``` bash
-chcon -t etc_t /anydir
-```
-To **return** to the original (default) fcontext of the file or dir found in /etc/selinux/targeted/contexts/files/file_contexts.local, use:
-
-``` bash
-restore /anydir
-```
 
 ## Thank you!
