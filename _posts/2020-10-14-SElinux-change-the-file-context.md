@@ -195,8 +195,12 @@ ___
 2. **Persistently** - `semanage fcontext -a [-m] -t <fcontext type> "/path/to/file/or/dir(/.*)?"`
 
 ## Restore to the default SELinux security contexts:
-1. **Temporary** - `restorecon -v /path/to/file/or/dir`
-2. **Persistently** - `semanage fcontext -d "/path/to/file/or/dir(/.*)?"`
+1. **Temporary** - `restorecon -vR /path/to/file/or/dir`
+2. **Persistently** - 
+``` bash
+semanage fcontext -d "/path/to/file/or/dir(/.*)?"
+restorecon -vR /path/to/file/or/dir
+```
 
 
 
