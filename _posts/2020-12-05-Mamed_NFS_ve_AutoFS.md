@@ -69,6 +69,7 @@ a)
 sudo vim /etc/exports
 ```
 	/homes		192.168.0.121(rw,no_root_squash)
+
 line-i əlavə edir.
 
 *yada*
