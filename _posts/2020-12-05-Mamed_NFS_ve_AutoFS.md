@@ -56,7 +56,7 @@ sudo yum install -y nfs-utils
 ![](/assets/img/screenshots/Screen_0001.png)
 
 	`sudo systemctl enable --now nfs-server.service`
-	
+
 ![](/assets/img/screenshots/Screen_0010.png)
 
 ### 3 - /home Qovluğu export (share; bölüşməsi) edilməsi...
@@ -187,4 +187,7 @@ Restart etdikdən sonra, görmək olar ki "/clients" qovluğu yarandı (`mkdir` 
 
 ![](/assets/img/screenshots/Screen_0013.png)
 
-Bu qədər. İndi qaldı Serverdə və Clientdə
+Bu qədər. İndi qaldı Serverdə və Clientdə user yaradıb yoxlamaq.
+
+Onun üçün Admin simple bash yazır.
+
