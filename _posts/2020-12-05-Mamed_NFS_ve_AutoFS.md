@@ -177,10 +177,10 @@ sudo vim /etc/auto.master.d/auto.clients
 
 	*		-rw		192.168.0.120:/homes/&
 	
-asterisk(\*) - bütün userlər.
--rw - read/write.
-192.168.0.120 - Server IP.
-:/homes - Serverdəki export (share) olunmuş qovluğ.
-& - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
+<br>asterisk(\*) - bütün userlər.
+<br>-rw - read/write.
+<br>192.168.0.120 - Server IP.
+<br>:/homes - Serverdəki export (share) olunmuş qovluğ.
+<br>& - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
 
 ![](/assets/img/screenshots/Screen_0012.png)
