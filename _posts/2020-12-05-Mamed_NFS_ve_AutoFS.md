@@ -56,6 +56,7 @@ sudo yum install -y nfs-utils
 ![](/assets/img/screenshots/Screen_0001.png)
 
 	`sudo systemctl enable --now nfs-server.service`
+	
 ![](/assets/img/screenshots/Screen_0010.png)
 
 ### 3 - /home Qovluğu export (share; bölüşməsi) edilməsi...
@@ -115,7 +116,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
 
-Admin install edəndın sonra, yoxlamaq istyır ki Serverdə olan "/homes" Clientdə görünürmü, bunun üçün:
+Admin install edəndın sonra, yoxlamaq istyır ki Serverdə olan "/home" Clientdə görünürmü, bunun üçün:
 `showmount -e 192.168.0.120`
 ![](/assets/img/screenshots/Screen_0011.png)
 
