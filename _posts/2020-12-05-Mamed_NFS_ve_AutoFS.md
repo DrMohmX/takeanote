@@ -99,7 +99,7 @@ sudo firewall-cmd --reload
 ```
 
 
-2. `exportfs -av`
+2. `sudo exportfs -av`
 ![](/assets/img/screenshots/Screen_0008.png)
 
 Bu bolüşmə (export, share) işini tamamlayır.
@@ -108,7 +108,7 @@ p.s.
 
 ipv4 192.168.0.121 əvəzinə əsas adla (alias ilə) istifadə edirlər, onun üçün:
 ``` bash
-echo "192.168.0.121 	client1" >> /etc/hosts
+sudo echo "192.168.0.121 	client1" >> /etc/hosts
 ```
 
 Serverdə bu qədər.
