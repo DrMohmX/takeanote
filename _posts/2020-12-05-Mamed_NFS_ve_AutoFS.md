@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NFS və AutoFS
-subtitle: Admin Mamedə NFS və AutoFS vasitasi ilə external home dir yaradır. Yaradır admin.
+subtitle: Admin Mamedə NFS və AutoFS vasitasi ilə external serverdə /home directory yaradacaq...
 tags: [rhel, exam, book, nfs, autofs]
 gh-badge: [star, fork, follow]
 comments: true
@@ -16,7 +16,7 @@ Salam, əziz oxucular. Bəri başdan demək istəyirəm ki, mən məktəbdə Az�
 
 ![](/assets/img/baner_002.png)
 
-ve 10lar© şirkətin Adi istifadəçisi:
+və 10lar© şirkətin Adi istifadəçisi:
 
 ![](/assets/img/baner_001.png)
 
