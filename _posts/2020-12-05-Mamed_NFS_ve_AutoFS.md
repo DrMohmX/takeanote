@@ -55,7 +55,7 @@ sudo mkdir /homes
 
 adı "/homes" qoyur çunki "home" artıq var. Onun belə fərqi yoxdur.
 
-### 2 - NFS Utils install edilməsi...
+### 2 - NFS Utils install edilməsi və aktvləşdirilməsi...
 
 Sonra **NFS**-i install edir...
 
@@ -63,6 +63,9 @@ Sonra **NFS**-i install edir...
 sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0001.png)
+
+	`sudo systemctl enable --now nfs-server.service`
+![](/assets/img/screenshots/Screen_0010.png)
 
 ### 3 - Qovluğu export (share; bölüşməsi) edilməsi...
 
@@ -85,8 +88,8 @@ sudo echo "/homes	192.168.0.121(rw,no_root_squash)" >> /etc/exports
 Admin "/homes" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşdü, client (kompyuter) oxuyub/yaza (read/write) bilər "/homes"-da, və clientin "root" istifadəçisi serverin "root" istifadəçisi kimi hər şey edə bilər bu qovluğda.
 
 Bu line-i elavə edəndən sonra,
- 
-1. Clientlətin (xaricdə olanlar) bu NFS qovluğuna (/homes) qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
+
+1. Clientlətin (xaricdə olanların) bu NFS qovluğuna (/homes) qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
 
 ``` bash
 sudo firewall-cmd --add-service nfs --permanent
@@ -95,15 +98,15 @@ sudo firewall-cmd --add-service rpc-bind --permanent
 sudo firewall-cmd --reload
 ```
 
-2. `sudo systemctl enable --now nfs-server.service`
-![](/assets/img/screenshots/Screen_0010.png)
-Bu line-ı aktivləşdirir (tamamlayır).
 
-3. `exportfs -av`
+2. `exportfs -av`
 ![](/assets/img/screenshots/Screen_0008.png)
+
+Bu bolüşmə (export, share) işini tamamlayır.
+
 P.s. 
 
-ipv4 192.168.0.121 əvəzinə əsas ad (alias) ilə istifadə edirlər, onun üçün:
+ipv4 192.168.0.121 əvəzinə əsas adla (alias ilə) istifadə edirlər, onun üçün:
 ``` bash
 echo "192.168.0.121 	client1" >> /etc/hosts
 ```
@@ -112,7 +115,7 @@ Serverdə bu qədər.
 
 ## Clientdə
 
-### 1 - NFS Utils install və firewallun whitelistine əlavə edilməsi...
+### 1 - NFS Utils install edilməsi...
 
 **NFS**-i install edir...
 
@@ -121,15 +124,11 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
 
-External serverin NFS qovluğuna qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
+Admin install edəndın sonra, yoxlamaq istyır ki Serverdə olan "/homes" Clientdə görünürmü, bunun üçün:
+`showmount -e 192.168.0.120`
+![](/assets/img/screenshots/Screen_0011.png)
 
-``` bash
-sudo firewall-cmd --add-service nfs --permanent
-sudo firewall-cmd --add-service mountd --permanent
-sudo firewall-cmd --add-service rpc-bind --permanent
-sudo firewall-cmd --reload
-```
-
+Əla! Serverdəki qovluğ gorünür.
 ### 2 - AutoFS install edilməsi və aktivləşdirilməsi...
 
 Admin ANCAQ client kompyuterində AutoFS tool-u install edir, ancaq clientdə (YADDA SAXLA)
@@ -183,3 +182,4 @@ sudo vim /etc/auto.master.d/auto.clients
 	# :/homes - Serverdəki export (share) olunmuş qovluğ.
 	# & - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
 
+![](/assets/img/screenshots/Screen_0012.png)
