@@ -43,7 +43,7 @@ dns 192.168.0.100
 
 Axşam saat 11 dir, *Admin* qalıb işdə, IT Menecer ona tapşırıb ki, sabahdan şirkətdə yaradılmış bütün userlərin external serverdə (VM 1) eyni BİR qovluğü olmalıdır, o qovluğun altında (umbrella), hər usera ayıd (adları ilə eyni) home directory yaranmalıdır. Admin bir az fikirləşib, "Spotify"-da "The Godfather" soundtrackləri qoşub, başlayıb işə..
 
-### 1
+### 1 - Ümümi qovluğun yaradılması...
 
 Admin ilk oncə serverdə ümumi directory yaradır:
 
@@ -53,7 +53,7 @@ sudo mkdir /homes
 
 adı "/homes" qoyur çunki "home" artıq var. Onun belə fərqi yoxdur.
 
-### 2
+### 2 - NFS Utils install edilməsi...
 
 Sonra **NFS**-i install edir...
 
@@ -62,7 +62,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0001.png)
 
-### 3 - Qovluğu export (share) edir...
+### 3 - Qovluğu export (share; bölüşməsi) edilməsi...
 
 a)
 ``` bash
