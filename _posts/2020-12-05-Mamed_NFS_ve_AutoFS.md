@@ -12,7 +12,7 @@ Salam, əziz oxucular. Bəri başdan demək istəyirəm ki, mən məktəbdə Az�
 
 10lar© şirkətin Sistem administratoru
 
-
+![](/assets/img/baner_002.png)
 
 ve 10lar© şirkətin Adi istifadəçisi
 
