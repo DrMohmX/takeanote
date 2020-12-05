@@ -104,7 +104,7 @@ sudo firewall-cmd --reload
 
 Bu bolüşmə (export, share) işini tamamlayır.
 
-P.s. 
+p.s. 
 
 ipv4 192.168.0.121 əvəzinə əsas adla (alias ilə) istifadə edirlər, onun üçün:
 ``` bash
@@ -176,10 +176,11 @@ sudo vim /etc/auto.master.d/auto.clients
 ```
 
 	*		-rw		192.168.0.120:/homes/&
-	# * - bütün userlər.
-	# -rw - read/write.
-	# 192.168.0.120 - Server IP.
-	# :/homes - Serverdəki export (share) olunmuş qovluğ.
-	# & - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
+	
+asterisk(\*) - bütün userlər.
+-rw - read/write.
+192.168.0.120 - Server IP.
+:/homes - Serverdəki export (share) olunmuş qovluğ.
+& - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
 
 ![](/assets/img/screenshots/Screen_0012.png)
