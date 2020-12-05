@@ -84,11 +84,23 @@ sudo echo "/homes	192.168.0.121(rw,no_root_squash)" >> /etc/exports
 ```
 Admin "/homes" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşdü, client (kompyuter) oxuyub/yaza (read/write) bilər "/homes"-da, və clientin "root" istifadəçisi serverin "root" istifadəçisi kimi hər şey edə bilər bu qovluğda.
 
-Bu line-i elavə edəndən sonra, `sudo exportfs -av` komandasını yazırsız.
-![](/assets/img/screenshots/Screen_0008.png)
+Bu line-i elavə edəndən sonra,
+ 
+1. Clientlətin (xaricdə olanlar) bu NFS qovluğuna (/homes) qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
 
+``` bash
+sudo firewall-cmd --add-service nfs --permanent
+sudo firewall-cmd --add-service mountd --permanent
+sudo firewall-cmd --add-service rpc-bind --permanent
+sudo firewall-cmd --reload
+```
+
+2. `sudo systemctl enable --now nfs-server.service`
+![](/assets/img/screenshots/Screen_0010.png)
 Bu line-ı aktivləşdirir (tamamlayır).
 
+3. `exportfs -av`
+![](/assets/img/screenshots/Screen_0008.png)
 P.s. 
 
 ipv4 192.168.0.121 əvəzinə əsas ad (alias) ilə istifadə edirlər, onun üçün:
@@ -109,7 +121,14 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
 
-Digər 
+External serverin NFS qovluğuna qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
+
+``` bash
+sudo firewall-cmd --add-service nfs --permanent
+sudo firewall-cmd --add-service mountd --permanent
+sudo firewall-cmd --add-service rpc-bind --permanent
+sudo firewall-cmd --reload
+```
 
 ### 2 - AutoFS install edilməsi və aktivləşdirilməsi...
 
@@ -153,7 +172,14 @@ p.s
 
 Bu addımda vacibdir, çünki bu addımda Admin elə bir line əlavə etməlidir ki "/etc/auto.master.d/auto.clients" faylına, adınnan fərqli olmuyaraq, hər bir userin "/clients" qovluğun altında ONA AYID HOME DİR olsun. Məsələn, "mamed" adlı userin home diri olsun /clients/mamed; "kamala" --- /clients/kamala ; "arzu" --- /clients/arzu və s.
 
-``` bin
+``` bash
 sudo vim /etc/auto.master.d/auto.clients
 ```
+
 	*		-rw		192.168.0.120:/homes/&
+	# * - bütün userlər.
+	# -rw - read/write.
+	# 192.168.0.120 - Server IP.
+	# :/homes - Serverdəki export (share) olunmuş qovluğ.
+	# & - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
+
