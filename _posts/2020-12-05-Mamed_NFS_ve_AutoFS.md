@@ -119,4 +119,27 @@ sudo systemctl enable --now autofs.service
 ```
 ![](/assets/img/screenshots/Screen_0004.png)
 
-### 3 
+### 3 /etc/auto.master edit edilməsi...
+
+Ən vacib addımlardan biri, burda çox diqqətli olmalıdır Admin. O bu addımda Client komyuterində qovluğ yaradıb, və yeni istifadiçəlir o qovluğla "home base" kimi istifadə etməlidirlər. Yaradılmış qovluğ **statik(!)** olacaq, onun altında avtomatik yaradılmış qovluğlar isə **dynamic(!)**. Demeli, ilk öncə /etc/auto.master file-ı edit edir admin:
+
+``` bash
+sudo vim /etc/auto.master
+```
+![](/assets/img/screenshots/Screen_0005.png)
+
+Orda "/misc   /etc/auto.misc" mövcuddur, ona əl vurmur, onun altinda isə yeni line əlavə edir:
+
+	/clients 	/etc/auto.master.d/auto.clients
+
+
+![](/assets/img/screenshots/Screen_0006.png)
+
+Bu line onu deyir ki, **statik** olaraq "/clients" qovluğu client kompyuterində yaradılır, və /etc/auto.master.d/auto.clients faylındaki settingslərə uyuğun olaraq, "/clients" də **dynamic** işlər görülür (yani, sub-qovluğlar yaranır)
+
+p.s 
+1. /etc/auto.master.d altında yaradılması daha məsləhtlidir, soruşma niyə, fərqli mövzudur
+2. auto.clients - fərqli adda ola bilər, məsələn "auto.klient", "auto.client", "auto.mushteri". Onun fərqi yoxdur.
+
+### 4 /etc/auto.master.d/auto.clients yaradılması və edit edilməsi...
+
