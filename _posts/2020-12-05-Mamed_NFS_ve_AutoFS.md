@@ -163,7 +163,7 @@ Orda "/misc   /etc/auto.misc" mövcuddur, ona əl vurmur, onun altinda isə yeni
 
 Bu line onu deyir ki, **statik** olaraq "/clients" qovluğu client kompyuterində yaradılır, və /etc/auto.master.d/auto.clients faylındaki settingslərə uyuğun olaraq, "/clients" qovluğun altında **dynamic** işlər görülür (yani, dynamic olaraq sub-qovluğlar yaranır).
 
-p.s 
+p.s. 
 1. /etc/auto.master.d altında yaradılması daha məsləhtlidir, soruşma niyə, fərqli mövzudur.
 2. auto.clients - fərqli adda ola bilər, məsələn "auto.klient", "auto.client", "auto.mushteri". Onun fərqi yoxdur.
 
