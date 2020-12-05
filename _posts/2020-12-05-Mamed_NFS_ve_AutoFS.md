@@ -73,6 +73,7 @@ sudo vim /etc/exports
 	/homes		192.168.0.121(rw,no_root_squash)
 
 line-i əlavə edir.
+![](/assets/img/screenshots/Screen_0007.png)
 
 *yada*
 
@@ -82,6 +83,11 @@ b)
 sudo echo "/homes	192.168.0.121(rw,no_root_squash)" >> /etc/exports
 ```
 Admin "/homes" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşdü, client (kompyuter) oxuyub/yaza (read/write) bilər "/homes"-da, və clientin "root" istifadəçisi serverin "root" istifadəçisi kimi hər şey edə bilər bu qovluğda.
+
+Bu line-i elavə edəndən sonra, `sudo exportfs -av` komandasını yazırsız.
+![](/assets/img/screenshots/Screen_0008.png)
+
+Bu line-ı aktivləşdirir (tamamlayır).
 
 P.s. 
 
@@ -94,7 +100,7 @@ Serverdə bu qədər.
 
 ## Clientdə
 
-### 1 - NFS Utils install edilməsi...
+### 1 - NFS Utils install və firewallun whitelistine əlavə edilməsi...
 
 **NFS**-i install edir...
 
@@ -102,6 +108,8 @@ Serverdə bu qədər.
 sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
+
+Digər 
 
 ### 2 - AutoFS install edilməsi və aktivləşdirilməsi...
 
@@ -135,7 +143,7 @@ Orda "/misc   /etc/auto.misc" mövcuddur, ona əl vurmur, onun altinda isə yeni
 
 ![](/assets/img/screenshots/Screen_0006.png)
 
-Bu line onu deyir ki, **statik** olaraq "/clients" qovluğu client kompyuterində yaradılır, və /etc/auto.master.d/auto.clients faylındaki settingslərə uyuğun olaraq, "/clients" də **dynamic** işlər görülür (yani, sub-qovluğlar yaranır)
+Bu line onu deyir ki, **statik** olaraq "/clients" qovluğu client kompyuterində yaradılır, və /etc/auto.master.d/auto.clients faylındaki settingslərə uyuğun olaraq, "/clients" qovluğun altında **dynamic** işlər görülür (yani, dynamic olaraq sub-qovluğlar yaranır).
 
 p.s 
 1. /etc/auto.master.d altında yaradılması daha məsləhtlidir, soruşma niyə, fərqli mövzudur.
@@ -143,4 +151,9 @@ p.s
 
 ### 4 - /etc/auto.master.d/auto.clients yaradılması və edit edilməsi...
 
-Bu addımda vacibdir, çünki bu addımda Admin elə bir line əlavə etməlidir ki "/etc/auto.master.d/auto.clients" faylına, addında 
+Bu addımda vacibdir, çünki bu addımda Admin elə bir line əlavə etməlidir ki "/etc/auto.master.d/auto.clients" faylına, adınnan fərqli olmuyaraq, hər bir userin "/clients" qovluğun altında ONA AYID HOME DİR olsun. Məsələn, "mamed" adlı userin home diri olsun /clients/mamed; "kamala" --- /clients/kamala ; "arzu" --- /clients/arzu və s.
+
+``` bin
+sudo vim /etc/auto.master.d/auto.clients
+```
+	*		-rw		192.168.0.120:/homes/&
