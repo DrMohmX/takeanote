@@ -45,17 +45,8 @@ Axşam saat 11 dir, *Admin* qalıb işdə, IT Menecer ona tapşırıb ki, sabahd
 
 ## Serverdə
 
-### 1 - Ümümi qovluğun yaradılması...
 
-Admin ilk oncə serverdə ümumi directory yaradır:
-
-``` bash
-sudo mkdir /homes
-```
-
-adı "/homes" qoyur çunki "home" artıq var. Onun belə fərqi yoxdur.
-
-### 2 - NFS Utils install edilməsi və aktvləşdirilməsi...
+### 1 - NFS Utils install edilməsi və aktvləşdirilməsi...
 
 Sonra **NFS**-i install edir...
 
@@ -67,13 +58,13 @@ sudo yum install -y nfs-utils
 	`sudo systemctl enable --now nfs-server.service`
 ![](/assets/img/screenshots/Screen_0010.png)
 
-### 3 - Qovluğu export (share; bölüşməsi) edilməsi...
+### 3 - /home Qovluğu export (share; bölüşməsi) edilməsi...
 
 a)
 ``` bash
 sudo vim /etc/exports
 ```
-	/homes		192.168.0.121(rw,no_root_squash)
+	/home		192.168.0.121(rw,no_root_squash)
 
 line-i əlavə edir.
 ![](/assets/img/screenshots/Screen_0007.png)
@@ -83,13 +74,13 @@ line-i əlavə edir.
 b)
 ``` bash
 #bir yazı ilə exports file-ına əlavə etdi
-sudo echo "/homes	192.168.0.121(rw,no_root_squash)" >> /etc/exports
+sudo echo "/home	192.168.0.121(rw,no_root_squash)" >> /etc/exports
 ```
-Admin "/homes" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşdü, client (kompyuter) oxuyub/yaza (read/write) bilər "/homes"-da, və clientin "root" istifadəçisi serverin "root" istifadəçisi kimi hər şey edə bilər bu qovluğda.
+Admin "/home" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşdü, client (kompyuter) oxuyub/yaza (read/write) bilər "/home"-da, və clientin "root" istifadəçisi serverin "root" istifadəçisi kimi hər şey edə bilər bu qovluğda.
 
 Bu line-i elavə edəndən sonra,
 
-1. Clientlətin (xaricdə olanların) bu NFS qovluğuna (/homes) qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
+1. Clientlətin (xaricdə olanların) bu NFS qovluğuna (/home) qoşulmaq üçün, gərək Admin Firewall-a 3 dənə sevice əlavə etsin:
 
 ``` bash
 sudo firewall-cmd --add-service nfs --permanent
@@ -175,12 +166,24 @@ Bu addımda vacibdir, çünki bu addımda Admin elə bir line əlavə etməlidir
 sudo vim /etc/auto.master.d/auto.clients
 ```
 
-	*		-rw		192.168.0.120:/homes/&
+	*		-rw		192.168.0.120:/home/&
 	
 <br>asterisk(\*) - bütün userlər.
 <br>-rw - read/write.
 <br>192.168.0.120 - Server IP.
-<br>:/homes - Serverdəki export (share) olunmuş qovluğ.
+<br>:/home - Serverdəki export (share) olunmuş "/home"qovluğu.
 <br>& - Userin adına uyğun olaraq, sub-qovluğ yaranacaq.
 
 ![](/assets/img/screenshots/Screen_0012.png)
+
+Bu line əlavə edəndən sonra, AutoFS restart etmək lazımdır.
+
+`sudo systemctl restart autofs.service`
+
+Restart etdikdən sonra, görmək olar ki "/clients" qovluğu yarandı (`mkdir` siz, avtomatik olaraq, /etc/auto.master -də "/clients ......" yazdığımız üçün)
+
+`ls -l /`
+
+![](/assets/img/screenshots/Screen_0013.png)
+
+Bu qədər. İndi qaldı Serverdə və Clientdə
