@@ -43,6 +43,8 @@ dns 192.168.0.100
 
 Axşam saat 11 dir, *Admin* qalıb işdə, IT Menecer ona tapşırıb ki, sabahdan şirkətdə yaradılmış bütün userlərin external serverdə (VM 1) eyni BİR qovluğü olmalıdır, o qovluğun altında (umbrella), hər usera ayıd (adları ilə eyni) home directory yaranmalıdır. Admin bir az fikirləşib, "Spotify"-da "The Godfather" soundtrackləri qoşub, başlayıb işə..
 
+## Serverdə
+
 ### 1 - Ümümi qovluğun yaradılması...
 
 Admin ilk oncə serverdə ümumi directory yaradır:
@@ -83,9 +85,38 @@ Admin "/homes" qovluğü 192.168.0.121 ipv4-li client (kompyuter) ilə bölüşd
 
 P.s. 
 
-ipv4 192.168.0.121 əvəzi əsaə ad ilə istifadə edirlər (alias), onun üçün
+ipv4 192.168.0.121 əvəzinə əsas ad (alias) ilə istifadə edirlər, onun üçün:
 ``` bash
 echo "192.168.0.121 	client1" >> /etc/hosts
 ```
 
 Serverdə bu qədər.
+
+## Clientdə
+
+### 1 NFS Utils install edilməsi...
+
+**NFS**-i install edir...
+
+``` bash
+sudo yum install -y nfs-utils
+```
+![](/assets/img/screenshots/Screen_0002.png)
+
+### 2 AutoFS install edilməsi və aktivləşdirilməsi...
+
+Admin ANCAQ client kompyuterində AutoFS tool-u install edir, ancaq clientdə (YADDA SAXLA)
+
+``` bash
+sudo yum install -y autofs 
+```
+![](/assets/img/screenshots/Screen_0003.png)
+
+AutoFS install edib qurtarandan sonra, Admin onu mütləq aktiv (enable, start; enable --now) etməlidir. Onun üçün:
+
+``` bash
+sudo systemctl enable --now autofs.service 
+```
+![](/assets/img/screenshots/Screen_0004.png)
+
+### 3 
