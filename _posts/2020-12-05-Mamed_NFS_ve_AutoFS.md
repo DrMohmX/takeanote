@@ -94,7 +94,7 @@ Serverdə bu qədər.
 
 ## Clientdə
 
-### 1 NFS Utils install edilməsi...
+### 1 - NFS Utils install edilməsi...
 
 **NFS**-i install edir...
 
@@ -103,7 +103,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
 
-### 2 AutoFS install edilməsi və aktivləşdirilməsi...
+### 2 - AutoFS install edilməsi və aktivləşdirilməsi...
 
 Admin ANCAQ client kompyuterində AutoFS tool-u install edir, ancaq clientdə (YADDA SAXLA)
 
@@ -119,7 +119,7 @@ sudo systemctl enable --now autofs.service
 ```
 ![](/assets/img/screenshots/Screen_0004.png)
 
-### 3 /etc/auto.master edit edilməsi...
+### 3 - /etc/auto.master edit edilməsi...
 
 Ən vacib addımlardan biri, burda çox diqqətli olmalıdır Admin. O bu addımda Client komyuterində qovluğ yaradıb, və yeni istifadiçəlir o qovluğla "home base" kimi istifadə etməlidirlər. Yaradılmış qovluğ **statik(!)** olacaq, onun altında avtomatik yaradılmış qovluğlar isə **dynamic(!)**. Demeli, ilk öncə /etc/auto.master file-ı edit edir admin:
 
@@ -138,8 +138,9 @@ Orda "/misc   /etc/auto.misc" mövcuddur, ona əl vurmur, onun altinda isə yeni
 Bu line onu deyir ki, **statik** olaraq "/clients" qovluğu client kompyuterində yaradılır, və /etc/auto.master.d/auto.clients faylındaki settingslərə uyuğun olaraq, "/clients" də **dynamic** işlər görülür (yani, sub-qovluğlar yaranır)
 
 p.s 
-1. /etc/auto.master.d altında yaradılması daha məsləhtlidir, soruşma niyə, fərqli mövzudur
+1. /etc/auto.master.d altında yaradılması daha məsləhtlidir, soruşma niyə, fərqli mövzudur.
 2. auto.clients - fərqli adda ola bilər, məsələn "auto.klient", "auto.client", "auto.mushteri". Onun fərqi yoxdur.
 
-### 4 /etc/auto.master.d/auto.clients yaradılması və edit edilməsi...
+### 4 - /etc/auto.master.d/auto.clients yaradılması və edit edilməsi...
 
+Bu addımda vacibdir, çünki bu addımda Admin elə bir line əlavə etməlidir ki "/etc/auto.master.d/auto.clients" faylına, addında 
