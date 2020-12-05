@@ -688,7 +688,7 @@ img[my-image] {
   font-size: 1.6875rem;
   line-height: 1.1;
   display: block;
-  font-family: 'Roboto';
+  font-family: Arial;
   font-weight: 300;
   margin: 0.625rem 0 0;
 }
@@ -696,7 +696,7 @@ img[my-image] {
   font-size: 1.6875rem;
   line-height: 1.1;
   display: block;
-  font-family: 'Roboto';
+  font-family: Arial;
   font-weight: 300;
   margin: 0.625rem 0 0;
   text-align: center;
