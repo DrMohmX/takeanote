@@ -214,3 +214,7 @@ else
 	ssh root@192.168.0.121 echo "$pass" | passwd --stdin $user
 fi
 ```
+
+Suallarınız varsa
+mail: <kerimov.rustam@live.ru>
+linkedin: [burada yaza bilərsən](https://linkedin.com)
