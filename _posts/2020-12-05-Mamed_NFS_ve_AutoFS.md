@@ -217,4 +217,4 @@ fi
 
 Suallarınız varsa: <br>
 mail: <kerimov.rustam@live.ru> <br>
-linkedin: [burada yaza bilərsən](https://linkedin.com)
+linkedin: [burada yaza bilərsən](https://www.linkedin.com/in/rustam-karimov-7293315b/)
