@@ -55,7 +55,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0001.png)
 
-	`sudo systemctl enable --now nfs-server.service`
+	sudo systemctl enable --now nfs-server.service
 
 ![](/assets/img/screenshots/Screen_0010.png)
 
