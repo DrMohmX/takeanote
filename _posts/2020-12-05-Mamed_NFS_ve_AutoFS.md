@@ -215,6 +215,6 @@ else
 fi
 ```
 
-Suallarınız varsa
-mail: <kerimov.rustam@live.ru>
+Suallarınız varsa: <br>
+mail: <kerimov.rustam@live.ru> <br>
 linkedin: [burada yaza bilərsən](https://linkedin.com)
