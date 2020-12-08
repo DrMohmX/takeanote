@@ -55,7 +55,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0001.png)
 
-	`sudo systemctl enable --now nfs-server.service`
+	sudo systemctl enable --now nfs-server.service
 
 ![](/assets/img/screenshots/Screen_0010.png)
 
@@ -116,7 +116,7 @@ sudo yum install -y nfs-utils
 ```
 ![](/assets/img/screenshots/Screen_0002.png)
 
-Admin install edəndın sonra, yoxlamaq istyır ki Serverdə olan "/home" Clientdə görünürmü, bunun üçün:
+Admin install edəndən sonra, yoxlamaq istəyir ki Serverdə olan "/home" qovluğ Clientdə görünür ya yox, bunun üçün:
 `showmount -e 192.168.0.120`
 ![](/assets/img/screenshots/Screen_0011.png)
 
@@ -191,3 +191,30 @@ Bu qədər. İndi qaldı Serverdə və Clientdə user yaradıb yoxlamaq.
 
 Onun üçün Admin simple bash yazır.
 
+
+Script belədir:
+
+``` bash
+#!/bin/bash
+
+read -p "Useri yaz: " user
+read -p "UIDini yaz, manual olaraq: " uid
+read -s -p "Parolu yaz $user uchun: " pass
+
+if [[ -z $uid ]]; then
+
+	useradd $user
+	echo "$pass" | passwd --stdin $user
+	ssh root@192.168.0.121 useradd -Mb /clients $user 
+	ssh root@192.168.0.121 echo "$pass" | passwd --stdin $user
+else
+	useradd -u $uid $user
+	echo "$pass" | passwd --stdin $user
+	ssh root@192.168.0.121 useradd -u $uid -Mb /clients $user 
+	ssh root@192.168.0.121 echo "$pass" | passwd --stdin $user
+fi
+```
+
+Suallarınız varsa: <br>
+mail: <kerimov.rustam@live.ru> <br>
+linkedin: [burada yaza bilərsən](https://www.linkedin.com/in/rustam-karimov-7293315b/)
