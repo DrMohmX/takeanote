@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Storage Management
-subtitle: Storage Devices and Partitions.
+title: Storage Devices and Partitions.
+subtitle: [*Not completed yet...*]]
 tags: [rhel, exam, book, Asghar]
 gh-badge: [star, fork, follow]
 comments: true
