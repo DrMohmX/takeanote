@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SELinux Management
-subtitle: Create and Restore SELinux fcontext
+title: Create and Restore SELinux fcontext
+subtitle: SELinux Management
 tags: [rhel, exam, selinux]
 gh-badge: [star, fork, follow]
 comments: true

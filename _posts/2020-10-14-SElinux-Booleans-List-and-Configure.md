@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SELinux Management
-subtitle: Booleans - List and Configure
+title: Booleans - List and Configure
+subtitle: SELinux Management
 tags: [rhel, exam, selinux]
 gh-badge: [star, fork, follow]
 comments: true
