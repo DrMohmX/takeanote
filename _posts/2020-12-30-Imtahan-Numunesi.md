@@ -24,11 +24,10 @@ Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu 
 
 #### Suallar (task'lar):
 
-1. Assuming the root user password is lost, and your
+1. [Assuming the root user password is lost, and your
 system is running in multi-user target with no current root
 session open. Reboot the system into an appropriate target,
-and reset the root user password to root1234. Log in with root and perform the remaining tasks.
-[izaha kech](https://takeanote.info)
+and reset the root user password to root1234. Log in with root and perform the remaining tasks](https://takeanote.info)
 
 2. Using a manual method (create/modify files by
 hand), configure a network connection on the primary
