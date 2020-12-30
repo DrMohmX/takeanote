@@ -35,7 +35,8 @@ layout: page
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h2 class="post-title">{{ post.title }} {{ post.badge }}</h2>
+      <h2 class="post-title"> {{ post.title }} </h2>
+      <img src="{{ post.badge }}">
 
       {% if post.subtitle %}
         <h3 class="post-subtitle">
