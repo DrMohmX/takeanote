@@ -1,6 +1,7 @@
 ---
 layout: post
 title: İmtahan Nümunəsi - Part 1
+badge: /assets/img/badges/article_asan.svg
 subtitle: Asghar Ghori-nin Kitabından götürülmüş Appendix A - Sample RHCSA Exam 1.
 tags: [rhel, exam, book]
 gh-badge: [star, fork, follow]
