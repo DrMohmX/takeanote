@@ -17,7 +17,7 @@ Share eləməyə unutmayın.
 
 ### İlk öncə
 
-Hər bir source istifadə edərək imtahana hazırlaşmalısınız.
+Hər bir source ilə istifadə edərək imtahana hazırlaşmalısınız.
 
 ### Context
 
