@@ -72,7 +72,7 @@ p.s. `linux` ilə başlayan line-da olan digər parameters-lər haqqında, [bura
 * **(7.) `Ctrl-D` `Ctrl-D`**
 <br>
 ![](/assets/gifs/anime_2.gif)
-* **
+
 ### Summary
 
 1. `e` --> linux ..... + **rd.break**
