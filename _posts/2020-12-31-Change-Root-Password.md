@@ -13,7 +13,7 @@ Salam, adminlər. İlk öncə deyib vurğulamaq istəyirəm ki, mən məktəbdə
 Share eləməyə unutmayın.
 
 
-![](https://bit.ly/38IJiyA)
+![](/assets/gifs/anime_3.gif)
 
 
 ### İlk öncə
