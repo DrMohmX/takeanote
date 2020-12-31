@@ -28,7 +28,7 @@ Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu 
 1. ![](/assets/img/badges/article_asan.svg) [Assuming the root user password is lost, and your
 system is running in multi-user target with no current root
 session open. Reboot the system into an appropriate target,
-and reset the root user password to root1234. Log in with root and perform the remaining tasks](https://takeanote.info)
+and reset the root user password to root1234. Log in with root and perform the remaining tasks](https://takeanote.info/2020-12-31-Change-Root-Password/)
 
 2. ![](/assets/img/badges/lab_asan.svg) Using a manual method (create/modify files by
 hand), configure a network connection on the primary
