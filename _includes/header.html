@@ -69,14 +69,13 @@
               <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
             {% else %}
               <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+              <img src="{{ post.badge }}" align="right">
             {% endif %}
           {% endif %}
 
           {% if include.type == "post" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
-            <img src="{{ post.badge }}" align="right">
-              <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
                 Last updated {{ page.last-updated | date: date_format }}
               </span>
