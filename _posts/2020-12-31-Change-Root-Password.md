@@ -8,6 +8,9 @@ gh-badge: [star, fork, follow]
 comments: true
 
 ---
+
+Root parolunu dəyişməsi. Müəllif: RK
+
 Salam, adminlər. İlk öncə deyib vurğulamaq istəyirəm ki, mən məktəbdə Azərbaycan fənni heç vaxt keçməmişəm, çunki Rusiyada məktəb oxumuşam, ona gorədə bəzi yerlərdə qramatik və orfoqrafik səhv etsəm, çox da şey eləməyin, bu Linux dərsliyidir, Azərbaycan dili yox. 
 
 Share eləməyə unutmayın.
@@ -28,7 +31,7 @@ Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu 
 
 Birinci task "unudulmuş" root parolunu dəyişdirilməsi ilə bağlıdır. Bunun üçün yeganə və asan yol var.
 
-Hostu restart edirsiniz və mövcud (adətən sonuncu olan) kernel-u seçib `e` düyməsinə basırsınız. (məndə "4.18.0-240.8.1.el8_3" versiyalı kernel-dır)
+Hostu restart edirsiniz və mövcud (adətən sırada birinci) kernel-u seçib `e` düyməsinə basırsınız. (məndə "4.18.0-240.8.1.el8_3" versiyalı kernel-dır)
 
 ![](/assets/img/screenshots/Screen_0014.png)
 
