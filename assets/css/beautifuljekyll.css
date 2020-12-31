@@ -621,8 +621,8 @@ footer .footer-custom-content {
     0%{     color: #00222f;    }
     49%{    color: #fa2d2d; }
     
-    
-    100%{   color: #fa2d2d;    }
+    60% { color: #00222f; }
+    100%{   color: #00222f;    }
 }
 
 /* --- Post and page headers --- */
