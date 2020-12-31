@@ -618,10 +618,10 @@ footer .footer-custom-content {
     animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
-    0%{     color: #fa2d2d;    }
+    0%{     color: #000000;    }
     49%{    color: #fa2d2d; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
+    
+    
     100%{   color: #fa2d2d;    }
 }
 
