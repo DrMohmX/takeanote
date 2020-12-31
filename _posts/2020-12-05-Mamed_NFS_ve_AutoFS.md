@@ -2,6 +2,7 @@
 layout: post
 title: NFS və AutoFS
 subtitle: Admin Mamedə NFS və AutoFS vasitasi ilə external serverdə /home directory yaradacaq...
+badge: /assets/img/badges/lab_orta.svg
 tags: [rhel, exam, book, nfs, autofs]
 gh-badge: [star, fork, follow]
 comments: true
