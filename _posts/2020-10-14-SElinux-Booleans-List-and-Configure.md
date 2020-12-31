@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Booleans - List and Configure
+badge: /assets/img/badges/lab_orta.svg
 subtitle: SELinux Management
 tags: [rhel, exam, selinux]
 gh-badge: [star, fork, follow]
