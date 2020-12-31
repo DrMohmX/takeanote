@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Red Hat Objective List
+badge: /assets/img/badges/article_none.svg
 subtitle: Red Hat Objectives
 tags: [rhel, exam]
 gh-badge: [star, fork, follow]
