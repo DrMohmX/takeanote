@@ -58,7 +58,7 @@ p.s. `linux` ilə başlayan line-da olan digər parameters-lər haqqında, [bura
 
     Burada biz, `/sysroot` dir'i (bu dir'də bütün system filelarımız yerləşir) **remount** edirik. `/sysroot`'u `/` (root) kimi qəbul edin, `switch_root` `/` (root'u), `/sysroot` kimi görür. Vəssalam.
 <br>
-* Novbəti addımda, ** (4.)`chroot /sysroot`** komandası istifadə edərkən, root fs-i `/sysroot`'a dəyişirik. Buda o deməkdir ki, artıq biz systemdəyik, və bütün kompun filelarına access var.
+* Novbəti addımda, **(4.)`chroot /sysroot`** komandası istifadə edərkən, root fs-i `/sysroot`'a dəyişirik. Buda o deməkdir ki, artıq biz systemdəyik, və bütün kompun filelarına access var.
 <br>
 * Bu mərhələdə biz artıq parolu dəyişə bilərik.
 
