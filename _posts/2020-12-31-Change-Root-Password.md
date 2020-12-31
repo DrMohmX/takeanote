@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Root Password dəyişdirilmısi...
-badge: /assets/img/badge/lab_asan.svg
+badge: /assets/img/badges/lab_asan.svg
 subtitle: Task 1 (Tapşırıq 1).
 tags: [rhel, exam, book, root]
 gh-badge: [star, fork, follow]
