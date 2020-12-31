@@ -619,11 +619,10 @@ footer .footer-custom-content {
     animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
-    0%{     color: blue;    }
+    0%{     color: black;    }
     33%{    color: red; }
-    
-    66% { color: green; }
-    100% { color: blue; }
+    66% { color: red; }
+    100% { color: black; }
 }
 
 /* --- Post and page headers --- */
