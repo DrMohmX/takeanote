@@ -10,7 +10,7 @@ comments: true
 ---
 Salam, adminlər. İlk öncə deyib vurğulamaq istəyirəm ki, mən məktəbdə Azərbaycan fənni heç vaxt keçməmişəm, çunki Rusiyada məktəb oxumuşam, ona gorədə bəzi yerlərdə qramatik və orfoqrafik səhv etsəm, çox da şey eləməyin, bu Linux dərsliyidir, Azərbaycan dili yox. 
 
-Share eləməyə unutmayın. Please.
+Share eləməyə unutmayın.
 
 ![](https://bit.ly/3pv1dzs)
 
