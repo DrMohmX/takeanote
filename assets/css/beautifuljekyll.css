@@ -424,7 +424,7 @@ img.my-image {
 
 footer {
   padding: 1.875rem 0;
-  border-top: 7px #EAEAEA solid;
+  /* border-top: 7px #EAEAEA solid; */
   margin-top: 3.125rem;
   font-size: 0.875rem;
   background-color: {{ site.footer-col | default: "#EAEAEA" }};
