@@ -25,7 +25,7 @@ Hər bir "source" ilə istifadə edərək imtahana hazırlaşmalısınız.
 
 ### Context
 
-Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu müəlifin hüquqlarını tapdalıyır və kitabı ona görə də alib istifadə etmık lazımdır.
+Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu müəlifin hüquqlarını tapdalıyır və ona görə də kitabı alib istifadə etmək lazımdır.
 
 ### Başlayaq
 
