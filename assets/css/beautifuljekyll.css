@@ -341,9 +341,10 @@ img.my-image {
   {% endunless %}
 }
 .navbar-custom .avatar-container .avatar-img {
-  width: 300%;
   display: block;
-  margin-bottom: 3.6rem;
+  margin-bottom: 57.6px;
+  margin-right: auto;
+  margin-left: auto;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
   {% endunless %}
