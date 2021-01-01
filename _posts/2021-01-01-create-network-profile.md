@@ -39,7 +39,7 @@ Sadəcə Network profile əlavə etmək üçün:
 ``` bash
 sudo nmcli con add ifname enp0s3 con-name test_net type ethernet ipv4.address 192.168.0.241/24 ipv4.gateway 192.168.0.1 ipv4.dns 192.168.0.1
 ```
-![](/assets/gifs/anime_4.gif)
+![](/assets/img/screenshots/Screen_0015.png)
 p.s. sıralmanın **fərqi yoxdur**
 
 * **con:** connection (full sözüdə yazmaq olar).
@@ -61,7 +61,7 @@ Deactivate üçün:
 
 `nmtui` yazıb, Enter'a basırıq. That's all. Aşağda ki GIF'də eyni adlı şəbəkə yaradacam, sadəcə `nmtui` istifadə edərək.
 
-![](/assets/gifs/anime_6.gif)
+![](/assets/gifs/anime_4.gif)
 
 Mən iki metod haqqında yazdım,
 
