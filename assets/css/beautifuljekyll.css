@@ -31,7 +31,7 @@ body.main-body-page {
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
-  background-image: url(https://takeanote.info/assets/img/bg/bg_1.png);
+  background-image: url(https://takeanote.info/assets/img/bg/bg_1.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
 }
 
 p {
