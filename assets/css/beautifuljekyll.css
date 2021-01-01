@@ -204,7 +204,10 @@ img.my-image {
   padding-bottom: 0.9375rem;
 }
 
-.nav-link-main .navbar-brand-main {
+.navbar-brand-main {
+  color: #5ba929;
+}
+.nav-link-main {
   color: #5ba929;
 }
 .navbar-custom .navbar-brand,
