@@ -30,10 +30,10 @@ system is running in multi-user target with no current root
 session open. Reboot the system into an appropriate target,
 and reset the root user password to root1234. Log in with root and perform the remaining tasks](https://takeanote.info/2020-12-31-Change-Root-Password/)
 
-2. ![](/assets/img/badges/lab_asan.svg) Using a manual method (create/modify files by
+2. ![](/assets/img/badges/lab_asan.svg) [Using a manual method (create/modify files by
 hand), configure a network connection on the primary
 network device with IP address 192.168.0.241/24, gateway
-192.168.0.1, and nameserver 192.168.0.1.
+192.168.0.1, and nameserver 192.168.0.1.](https://takeanote.info/2021-01-01-create-network-profile)
 
 3. ![](/assets/img/badges/lab_asan.svg) Using a manual method (modify file by hand), set
 the system hostname to rhcsa1.example.com and aliasrhcsa1. Make sure that the new hostname is reflected in the
