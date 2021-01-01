@@ -217,9 +217,11 @@ img.my-image {
 
 .navbar-brand-main {
   color: #5ba929;
+  font-weight: 800;
 }
 .nav-link-main {
   color: #5ba929;
+  font-weight: 800;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
