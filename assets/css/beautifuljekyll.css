@@ -23,16 +23,15 @@ body {
 
 }
 body.main-body-page {
-font-size: 1.125rem;
-color: {{ site.text-col | default: "#404040" }};
-position: relative;
-background-color: {{ site.page-col | default: "#FFFFFF" }};
-{% if site.page-img %}
-background-image: url({{ site.page-img | relative_url }});
-background-attachment: fixed;
-{% endif %}
-background-image: url(https://takeanote.info/assets/img/bg/bg_1.png);
-
+  font-size: 1.125rem;
+  color: {{ site.text-col | default: "#404040" }};
+  position: relative;
+  background-color: {{ site.page-col | default: "#FFFFFF" }};
+  {% if site.page-img %}
+  background-image: url({{ site.page-img | relative_url }});
+  background-attachment: fixed;
+  {% endif %}
+  background-image: url(https://takeanote.info/assets/img/bg/bg_1.png);
 }
 
 p {
@@ -230,6 +229,7 @@ img.my-image {
 .nav-link-main {
   color: #5ba929;
   font-weight: 800;
+  padding: 8px;
 }
 .nav-link-main:focus, .nav-link-main:hover {
     text-decoration: none;
