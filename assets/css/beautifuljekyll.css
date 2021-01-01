@@ -158,13 +158,18 @@ img.my-image {
   padding-bottom: 0;
 }
 
-.navbar-custom .navbar-brand .navbar-brand-main {
+.navbar-custom .navbar-brand {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   font-size: 1.125rem;
 }
-
+.navbar-brand-main{
+  line-height: 1.5;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 1.125rem;
+}
 .navbar-custom .navbar-brand-logo {
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
@@ -195,7 +200,13 @@ img.my-image {
   font-size: 0.8125rem;
   letter-spacing: 0.0625rem;
 }
-
+.nav-link-main {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.25rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
 .navbar-custom .navbar-nav .nav-link .nav-link-main {
   padding-top: 0;
   padding-bottom: 0;
