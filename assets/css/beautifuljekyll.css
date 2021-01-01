@@ -99,7 +99,7 @@ img::-moz-selection {
 }
 
 img {
-  max-width: 100%;
+  max-width: 350%;
 }
 
 img.my-image {
@@ -341,7 +341,7 @@ img.my-image {
   {% endunless %}
 }
 .navbar-custom .avatar-container .avatar-img {
-  width: 100%;
+  width: 350%;
   display: block;
   margin-bottom: 3.6rem;
   {% unless site.round-avatar == false %}
