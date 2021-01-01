@@ -37,7 +37,7 @@ nmcli tool'un bütün özəllikləri haqqında yazmıyacam, ətrafli bilmək ü�
 Sadəcə Network profile əlavə etmək üçün:
 
 ``` bash
-sudo nmcli con add ifname enp0s3 con-name test_net type ethernet ipv4.address 192.168.0.70/24 ipv4.gateway 192.168.0.1 ipv4.dns 192.168.0.1,8.8.8.8
+sudo nmcli con add ifname enp0s3 con-name test_net type ethernet ipv4.address 192.168.0.241/24 ipv4.gateway 192.168.0.1 ipv4.dns 192.168.0.1
 ```
 ![](/assets/gifs/anime_4.gif)
 p.s. sıralmanın **fərqi yoxdur**
@@ -49,7 +49,7 @@ p.s. sıralmanın **fərqi yoxdur**
 * **type:** şəbəkə növə (ethernet, WiFi, VirtualBridge etc.)
 * **ipv4.address:** IPv4 ünvanı (Class A - 10.XXX.XXX.XXX, Class B - 172.16-31.XXX.XXX, Class C - 192.168.XXX.XXX).
 * **ipv4.gateway:** gateway (router) ünvanı.
-* **ipv4.dns:** DNS server ünvanı(ları). **NOTE! Vergül istifadə edərək 2+ DNS ünvan əlavə etmək olar**
+* **ipv4.dns:** DNS server ünvanı(ları) - nameserver. **NOTE! Vergül istifadə edərək 2+ DNS ünvan əlavə etmək olar**
 
 Yaradannan sonra, şəbəkəni **activeləşdirmək** üçün:
 `nmcli con up test_net`
@@ -61,7 +61,7 @@ Deactivate üçün:
 
 `nmtui` yazıb, Enter'a basırıq. That's all. Aşağda ki GIF'də eyni adlı şəbəkə yaradacam, sadəcə `nmtui` istifadə edərək.
 
-![](/assets/gifs/anime_6.gif)
+![](/assets/gifs/vid_1.mp4)
 
 Mən iki metod haqqında yazdım,
 
