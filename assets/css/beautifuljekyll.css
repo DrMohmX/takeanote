@@ -297,7 +297,7 @@ img.my-image {
 .nav-link-main {
   color: #5ba929;
   font-weight: 800;
-  padding: 8px;
+  padding: 10px;
 }
 .nav-link-main:focus, .nav-link-main:hover {
     text-decoration: none;
