@@ -19,6 +19,7 @@ body {
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
+  background-image: url(https://takeanote.info/assets/img/bg/bg_1.png);
 
 }
 
@@ -54,6 +55,10 @@ h1, h2, h3, h4 {
 }
 a {
   color: {{ site.link-col | default: "#008AFF" }};
+}
+a:hover,
+a:focus {
+  color: {{ site.hover-col | default: "#0085A1" }};
 }
 a:hover,
 a:focus {
@@ -153,7 +158,7 @@ img.my-image {
   padding-bottom: 0;
 }
 
-.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand .navbar-brand-main {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -191,7 +196,7 @@ img.my-image {
   letter-spacing: 0.0625rem;
 }
 
-.navbar-custom .navbar-nav .nav-link {
+.navbar-custom .navbar-nav .nav-link .nav-link-main {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 1.25rem;
@@ -199,6 +204,9 @@ img.my-image {
   padding-bottom: 0.9375rem;
 }
 
+.nav-link-main .navbar-brand-main {
+  color: #5ba929;
+}
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
@@ -388,7 +396,7 @@ img.my-image {
 
 footer {
   padding: 1.875rem 0;
-  border-top: 1px #EAEAEA solid;
+  border-top: 7px #EAEAEA solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
   background-color: {{ site.footer-col | default: "#EAEAEA" }};
@@ -401,7 +409,9 @@ footer {
 footer p.text-muted {
   color: {{ site.footer-text-col | default: "#777777" }} !important;
 }
-
+footer p.text-muted-main {
+  color: #90da61;
+}
 footer a {
   color: {{ site.footer-link-col | default: "#404040" }};
 }
