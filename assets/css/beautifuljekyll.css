@@ -345,6 +345,7 @@ img.my-image {
   margin-bottom: 57.6px;
   margin-right: auto;
   margin-left: auto;
+  width: 90px;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
   {% endunless %}
