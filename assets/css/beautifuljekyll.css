@@ -22,7 +22,7 @@ body {
   
 
 }
-body .main_page {
+body.main-body-page {
 font-size: 1.125rem;
 color: {{ site.text-col | default: "#404040" }};
 position: relative;
