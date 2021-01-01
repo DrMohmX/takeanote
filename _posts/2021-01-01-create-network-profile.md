@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure a network connection..
+title: Network profile yaradılması..
 badge: /assets/img/badges/lab_asan.svg
 subtitle: Task 2 (Tapşırıq 2).
 tags: [rhel, exam, book, root]
@@ -8,7 +8,7 @@ gh-badge: [star, fork, follow]
 comments: true
 
 ---
-Salam, adminlər. İlk öncə deyib vurğulamaq istəyirəm ki, mən məktəbdə Azərbaycan fənni heç vaxt keçməmişəm, çunki Rusiyada məktəb oxumuşam, ona gorədə bəzi yerlərdə qramatik və orfoqrafik səhv etsəm, çox da şey eləməyin, bu Linux dərsliyidir, Azərbaycan dili yox. 
+Bayramınız Mübarək. Bügün Şəbəkə profili (Network profile) 2 metodla əlavə edilməsi haqqında məqalə yazıb, çalışacam sizə izah edim.
 
 Share eləməyə unutmayın.
 
