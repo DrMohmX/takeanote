@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure a network connection..
-badge: /assets/img/basges/lab_asan.svg
+badge: /assets/img/badges/lab_asan.svg
 subtitle: Task 2 (Tapşırıq 2).
 tags: [rhel, exam, book, root]
 gh-badge: [star, fork, follow]
