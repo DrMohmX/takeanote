@@ -24,14 +24,15 @@ body {
 }
 body.main-body-page {
   font-size: 1.125rem;
-  color: {{ site.text-col | default: "#404040" }};
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
   position: relative;
-  background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
   background-image: url(https://takeanote.info/assets/img/bg/bg_1.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
+  background-repeat: no-repeat;
 }
 
 p {
