@@ -61,7 +61,7 @@ Deactivate üçün:
 
 `nmtui` yazıb, Enter'a basırıq. That's all. Aşağda ki GIF'də eyni adlı şəbəkə yaradacam, sadəcə `nmtui` istifadə edərək.
 
-![](/assets/gifs/vid_1.mp4)
+![](/assets/gifs/anime_6.gif)
 
 Mən iki metod haqqında yazdım,
 
