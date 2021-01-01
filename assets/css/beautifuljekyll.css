@@ -341,7 +341,7 @@ img.my-image {
   {% endunless %}
 }
 .navbar-custom .avatar-container .avatar-img {
-  width: 350%;
+  width: 300%;
   display: block;
   margin-bottom: 3.6rem;
   {% unless site.round-avatar == false %}
