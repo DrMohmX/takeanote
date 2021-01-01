@@ -31,7 +31,7 @@ body.main-body-page {
   {% if site.page-img %}
   background-attachment: fixed;
   {% endif %}
-  background-image: url(https://takeanote.info/assets/img/bg/bg_1.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
+  background-image: url(https://takeanote.info/assets/img/bg/bg_2.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
   background-repeat: no-repeat;
 }
 
