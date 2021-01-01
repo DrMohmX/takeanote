@@ -219,9 +219,15 @@ img.my-image {
   color: #5ba929;
   font-weight: 800;
 }
+.navbar-brand-main:focus, .navbar-brand-main:hover {
+    text-decoration: none;
+}
 .nav-link-main {
   color: #5ba929;
   font-weight: 800;
+}
+.nav-link-main:focus, .nav-link-main:hover {
+    text-decoration: none;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
