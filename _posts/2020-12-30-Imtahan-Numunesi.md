@@ -21,7 +21,7 @@ Hər bir source ilə istifadə edərək imtahana hazırlaşmalısınız.
 
 ### Context
 
-Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu müəlifin hüquqlarını tapdalıyır və kitabı ona görə də alib istifadə etmık lazımdır.
+Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu müəlifin hüquqlarını tapdalıyır və [kitabı](https://www.amazon.com/RHCSA-Red-Hat-Enterprise-Linux/dp/1775062120) ona görə də alib istifadə etmık lazımdır.
 
 #### Suallar (task'lar):
 
