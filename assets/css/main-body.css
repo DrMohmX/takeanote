@@ -208,7 +208,7 @@ img.my-image {
 .navbar-custom-main .navbar-brand-main,
 .navbar-custom-main .navbar-nav-main .nav-link-main {
   font-weight: 800;
-  color: {{ site.navbar-text-col | default: "#404040" }};
+  color: red;
 }
 
 .navbar-toggler-main {
