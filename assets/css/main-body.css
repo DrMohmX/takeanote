@@ -139,6 +139,13 @@ img.my-image {
 
 /* --- Navbar --- */
 
+.navbar-custom-main .navbar-nav-main .nav-item-main {
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
+}
+
+
 .navbar-custom-main {
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
