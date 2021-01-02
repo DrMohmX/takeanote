@@ -139,6 +139,13 @@ img.my-image {
 
 /* --- Navbar --- */
 
+
+@media (min-width: 1200px) {
+.navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+}
 .navbar-custom-main .navbar-nav-main .nav-item-main {
     text-transform: uppercase;
     font-size: 0.8125rem;
