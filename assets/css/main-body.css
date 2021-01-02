@@ -553,6 +553,16 @@ footer .footer-custom-content {
   }
 }
 
+.navbar-collapse-main {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
 /* --- Post preview (feed) --- */
 
 .post-preview {
