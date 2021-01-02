@@ -14,6 +14,7 @@ html {
 body.main-body {
   font-size: 1.125rem;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: auto;
   background-image: url(https://takeanote.info/assets/img/bg/bg_2.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
   background-attachment: fixed;
