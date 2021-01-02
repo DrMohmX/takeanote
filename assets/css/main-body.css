@@ -24,12 +24,15 @@ body {
 
 body.main-body {
   font-size: 1.125rem;
+  background-repeat: no-repeat;
+  background-size: auto;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});
+  background-image: url(https://takeanote.info/assets/img/bg/bg_2.png), linear-gradient(138deg, #f1eef3, #ccc3e2);
   background-attachment: fixed;
+
   {% endif %}
 }
 
@@ -137,7 +140,7 @@ img.my-image {
 
 /* --- Navbar --- */
 
-.navbar-custom {
+.navbar-custom-main {
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -150,52 +153,52 @@ img.my-image {
   transition: padding .5s ease-in-out;
 }
 
-.navbar-custom,
-.navbar-custom.top-nav-short,
-.navbar-custom.top-nav-short-permanent {
+.navbar-custom-main,
+.navbar-custom-main.top-nav-short,
+.navbar-custom-main.top-nav-short-permanent {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.navbar-custom .navbar-brand {
+.navbar-custom-main .navbar-brand-main {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   font-size: 1.125rem;
 }
 
-.navbar-custom .navbar-brand-logo {
+.navbar-custom-main .navbar-brand-logo-main {
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
   transition: padding .5s ease-in-out;
 }
 
-.navbar-custom .navbar-brand-logo,
-.navbar-custom.top-nav-short .navbar-brand-logo,
-.navbar-custom.top-nav-short-permanent .navbar-brand-logo {
+.navbar-custom-main .navbar-brand-logo,
+.navbar-custom-main.top-nav-short-main .navbar-brand-logo-main,
+.navbar-custom-main.top-nav-short-permanent-main .navbar-brand-logo-main {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
 }
 
-.navbar-custom .navbar-brand-logo img {
+.navbar-custom-main .navbar-brand-logo-main img {
   -webkit-transition: height .5s ease-in-out;
   -moz-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
 }
 
-.navbar-custom .navbar-brand-logo img,
-.navbar-custom.top-nav-short .navbar-brand-logo img,
-.navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
+.navbar-custom-main .navbar-brand-logo-main img,
+.navbar-custom-main.top-nav-short-main .navbar-brand-logo-main img,
+.navbar-custom-main.top-nav-short-permanent-main .navbar-brand-logo-main img {
   height: 2.5rem;
 }
 
-.navbar-custom .navbar-nav .nav-item {
+.navbar-custom-main .navbar-nav-main .nav-item-main {
   text-transform: uppercase;
   font-size: 0.8125rem;
   letter-spacing: 0.0625rem;
 }
 
-.navbar-custom .navbar-nav .nav-link {
+.navbar-custom-main .navbar-nav-main .nav-link-main {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 1.25rem;
@@ -203,22 +206,22 @@ img.my-image {
   padding-bottom: 0.9375rem;
 }
 
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-link {
+.navbar-custom-main .navbar-brand-main,
+.navbar-custom-main .navbar-nav-main .nav-link-main {
   font-weight: 800;
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
-.navbar-toggler {
+.navbar-toggler-main {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-.navbar-custom .navbar-toggler:focus,
-.navbar-custom .navbar-toggler:hover {
+.navbar-custom-main .navbar-toggler-main:focus,
+.navbar-custom-main .navbar-toggler-main:hover {
   background-color: initial;
 }
 
-.navbar-custom .navbar-toggler[aria-expanded="true"] {
+.navbar-custom-main .navbar-toggler-main[aria-expanded="true"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -227,12 +230,12 @@ img.my-image {
 }
 
 @media (min-width: 1200px) {
-  .navbar-custom {
+  .navbar-custom-main {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 
-  .navbar-custom .navbar-brand-logo {
+  .navbar-custom-main .navbar-brand-logo {
     padding-top: 0;
     padding-bottom: 0;
   }
