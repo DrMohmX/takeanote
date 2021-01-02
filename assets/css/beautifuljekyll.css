@@ -12,11 +12,11 @@ html {
 
 body {
   font-size: 1.125rem;
+  background-image: linear-gradient(138deg, #f1eef3, #ccc3e2);
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
   /*background-color: {{ site.page-col | default: "#FFFFFF" }};*/
   {% if site.page-img %}
-  background-image: inear-gradient(138deg, #f1eef3, #ccc3e2);
   background-attachment: fixed;
   {% endif %}
 }
