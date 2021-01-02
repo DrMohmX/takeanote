@@ -153,8 +153,8 @@ img.my-image {
 }
 
 .navbar-custom-main,
-.navbar-custom-main.top-nav-short,
-.navbar-custom-main.top-nav-short-permanent {
+.navbar-custom-main.top-nav-short-main,
+.navbar-custom-main.top-nav-short-permanent-main {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -172,7 +172,7 @@ img.my-image {
   transition: padding .5s ease-in-out;
 }
 
-.navbar-custom-main .navbar-brand-logo,
+.navbar-custom-main .navbar-brand-logo-main,
 .navbar-custom-main.top-nav-short-main .navbar-brand-logo-main,
 .navbar-custom-main.top-nav-short-permanent-main .navbar-brand-logo-main {
   padding-top: 0.3125rem;
@@ -259,7 +259,7 @@ img.my-image {
   }
 }
 
-.navbar-custom-main .nav-item-main.dropdown-main.show {
+.navbar-custom-main .nav-item-main.dropdown.show {
   background: rgba(0, 0, 0, 0.2);
 }
 
