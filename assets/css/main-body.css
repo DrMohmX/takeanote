@@ -489,6 +489,11 @@ img.my-image {
     padding-left: 0;
 }
 
+.nav-link-main {
+    display: block;
+    padding: .5rem 1rem;
+}
+
 
 /* --- Footer --- */
 
