@@ -18,6 +18,7 @@ navbar-links:
   Author's home: "aboutme"
   Parts:
           - RED HAT: "redhat"
+          - School Project: "projects"
 
 # --- Logo --- #
 
