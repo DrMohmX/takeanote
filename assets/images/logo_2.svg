@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 111.2 30.6" style="enable-background:new 0 0 111.2 30.6;" xml:space="preserve">
-<image style="overflow:visible;" width="1900" height="800" xlink:href="../img/logo_01269.png"  transform="matrix(4.839249e-02 0 0 4.839249e-02 9.6251 -4.074)">
-</image>
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#FFFFFF;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:24px;}
+	.st4{display:inline;fill:url(#Subtraction_1_1_);}
+	.st5{fill:#FFFFFF;stroke:#3BBEFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:#FF0039;}
+	.st7{font-family:'Tahoma-Bold';}
+	.st8{font-size:11.2381px;}
+	.st9{fill:url(#SVGID_1_);}
+</style>
+<g id="Layer_1" class="st0">
+	<g id="Group_2" transform="translate(-372.804 -44.291)">
+		<text transform="matrix(1 0 0 1 409 68)" class="st1 st2 st3">BASIC</text>
+		
+			<linearGradient id="Subtraction_1_1_" gradientUnits="userSpaceOnUse" x1="338.8305" y1="157.4625" x2="339.6055" y2="156.7375" gradientTransform="matrix(7.9035 4.5631 9.6265 -16.6736 -3810.2312 1129.1823)">
+			<stop  offset="0" style="stop-color:#FE8464"/>
+			<stop  offset="1" style="stop-color:#FE6E9A"/>
+		</linearGradient>
+		<path id="Subtraction_1" class="st4" d="M380.7,66.7L380.7,66.7c-2.1-1.2-3.6-3.3-4.2-5.7c-0.6-2.5-0.2-5.1,1.1-7.2
+			c1.2-2.2,3.3-3.8,5.7-4.6c2.3-0.7,4.9-0.4,7,0.8L380.7,66.7L380.7,66.7z"/>
+		<path id="Subtraction_2" class="st1" d="M383.9,68L383.9,68c6.5,3.8,14.9,1.5,18.7-5c1.8-3.1,2.3-6.9,1.4-10.4
+			c-0.9-3.5-3.2-6.5-6.4-8.3L383.9,68z"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<path class="st5" d="M61.1,2.9c5.2,1.8,9,6.7,9,12.6c0,7.3-5.9,13.3-13.3,13.3c-6.2,0-11.5-4.5-12.8-10.3"/>
+	<text transform="matrix(1 0 0 1 40.5577 18.6745)" class="st6 st7 st8">  BS</text>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="43.9983" y1="18.7164" x2="43.9983" y2="10.7156">
+			<stop  offset="0" style="stop-color:#3BBEFF"/>
+			<stop  offset="1" style="stop-color:#FF0039"/>
+		</linearGradient>
+		<path class="st9" d="M43,18.6l-0.2-1.2c-0.1-0.5-0.1-1.1-0.1-1.6l0-0.4c0-0.6,0-1.1,0.1-1.7l0.2-1.5h-2.4v-1.6h6.9v1.6H45
+			l-0.1,1.3c-0.1,1-0.1,2-0.1,3l0,0.2c0,0.5,0.1,1,0.1,1.5l0.1,0.6C45,18.7,43.1,18.8,43,18.6z"/>
+	</g>
+</g>
 </svg>
