@@ -1,4 +1,11 @@
 body {
 background-color: #000000;
-background-image: url(/assets/img/1_For_site.png), linear-gradient(147deg, #000000 0%, #434343 74%);
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+.watch-main {
+
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
 }
