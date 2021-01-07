@@ -1,18 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.183" height="1075.636" viewBox="0 0 1920.183 1075.636">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#361cc1"/>
-      <stop offset="1" stop-color="#2e82ef"/>
-    </linearGradient>
-    <clipPath id="clip-path">
-      <path id="Path_199" data-name="Path 199" d="M-533.031,278.516s95.269,204.193,401.21,161.147,419.656-32.1,544.188,96.892,343.977,107.54,572.909,67.066,360.19,68.158,401.79,142.968c.041-2.4-.074-1075.621-.074-1075.621l-1920,.011Z" transform="translate(533 329)" fill="url(#linear-gradient)"/>
-    </clipPath>
-  </defs>
-  <g id="Group_112" data-name="Group 112" transform="translate(0.089 0.042)">
-    <path id="Path_195" data-name="Path 195" d="M-533.089,278.364s100.43,239.944,401.206,191.477,442.068,9.577,537.63,114.941,352.091,94.329,580.987,52.374S1349.9,678.95,1387.094,746.594c.016.016-.373-1075.609-.373-1075.609l-1919.766-.027Z" transform="translate(533 329)" opacity="0.11" fill="url(#linear-gradient)"/>
-    <path id="Path_194" data-name="Path 194" d="M-533.031,278.516s95.269,204.193,401.21,161.147,419.656-32.1,544.188,96.892,343.977,107.54,572.909,67.066,360.19,68.158,401.79,142.968c.041-2.4-.074-1075.621-.074-1075.621l-1920,.011Z" transform="translate(533 329)" fill="url(#linear-gradient)"/>
-    <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
-      <path id="Path_4" data-name="Path 4" d="M-496.368,321.285S-322.126-70.761,321.065,66.253s869.415,77.467,1056.161-463.982" transform="translate(522 366.416)" fill="none" stroke="#361cc1" stroke-width="128" opacity="0.14"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920.2 1075.6" style="enable-background:new 0 0 1920.2 1075.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.11;fill:url(#Path_195_1_);enable-background:new    ;}
+	.st1{fill:url(#Path_194_1_);}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{opacity:0.14;fill:none;stroke:#000000;stroke-width:128;enable-background:new    ;}
+	.st4{font-family:'MyriadPro-Regular';}
+	.st5{font-size:12px;}
+</style>
+<g id="Group_112" transform="translate(0.089 0.042)">
+	
+		<linearGradient id="Path_195_1_" gradientUnits="userSpaceOnUse" x1="859.9631" y1="638.3652" x2="859.9631" y2="637.3652" gradientTransform="matrix(1920.1835 0 0 -1075.636 -1650327 686648.5625)">
+		<stop  offset="0" style="stop-color:#361CC1"/>
+		<stop  offset="1" style="stop-color:#2E82EF"/>
+	</linearGradient>
+	<path id="Path_195" class="st0" d="M-0.1,607.4c0,0,100.4,239.9,401.2,191.5s442.1,9.6,537.6,114.9s352.1,94.3,581,52.4
+		s363.2,41.8,400.4,109.4c0,0-0.4-1075.6-0.4-1075.6L0,0L-0.1,607.4z"/>
+	
+		<linearGradient id="Path_194_1_" gradientUnits="userSpaceOnUse" x1="859.9631" y1="638.2834" x2="859.9631" y2="637.2834" gradientTransform="matrix(1920.1058 0 0 -1075.621 -1650260.125 686639)">
+		<stop  offset="0" style="stop-color:#0A002A"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<path id="Path_194" class="st1" d="M0,607.5c0,0,95.3,204.2,401.2,161.1c305.9-43,419.7-32.1,544.2,96.9s344,107.5,572.9,67.1
+		s360.2,68.2,401.8,143c0-2.4-0.1-1075.6-0.1-1075.6L0,0L0,607.5z"/>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M0,607.5c0,0,95.3,204.2,401.2,161.1c305.9-43,419.7-32.1,544.2,96.9s344,107.5,572.9,67.1
+				s360.2,68.2,401.8,143c0-2.4-0.1-1075.6-0.1-1075.6L0,0L0,607.5z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Mask_Group_6" class="st2">
+			<path id="Path_4" class="st3" d="M25.6,687.7c0,0,174.2-392,817.4-255s869.4,77.5,1056.2-464"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 980 340)" class="st4 st5">TBS</text>
 </svg>
