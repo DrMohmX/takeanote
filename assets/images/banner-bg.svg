@@ -5,9 +5,10 @@
 <style type="text/css">
 	.st0{opacity:0.11;fill:url(#Path_195_1_);enable-background:new    ;}
 	.st1{fill:url(#Path_194_1_);}
-	.st2{clip-path:url(#SVGID_2_);}
+	.st2{opacity:0.11;clip-path:url(#SVGID_2_);}
 	.st3{fill:#E90034;}
-	.st4{opacity:0.3;fill:none;stroke:#000000;stroke-width:128;enable-background:new    ;}
+	.st4{clip-path:url(#SVGID_2_);}
+	.st5{opacity:0.3;fill:none;stroke:#000000;stroke-width:128;enable-background:new    ;}
 </style>
 <g id="Group_112" transform="translate(0.089 0.042)">
 	
@@ -128,8 +129,8 @@
 					c-1.9,3.8-2.9,7.7-2.9,11.8c0,2.1,0.3,3.8,0.8,5.3c0.6,1.5,1.3,2.3,2.1,2.6C885.3,361.2,887.6,360.8,890.3,359.3z"/>
 			</g>
 		</g>
-		<g id="Mask_Group_6" class="st2">
-			<path id="Path_4" class="st4" d="M25.6,687.7c0,0,174.2-392,817.4-255s869.4,77.5,1056.2-464"/>
+		<g id="Mask_Group_6" class="st4">
+			<path id="Path_4" class="st5" d="M25.6,687.7c0,0,174.2-392,817.4-255s869.4,77.5,1056.2-464"/>
 		</g>
 	</g>
 </g>
