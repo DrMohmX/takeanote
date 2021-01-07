@@ -33,7 +33,10 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  background-color: #000000; 
+}
+
 
 * {
   margin: 0;
