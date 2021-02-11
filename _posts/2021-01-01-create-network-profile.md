@@ -8,7 +8,7 @@ gh-badge: [star, fork, follow]
 comments: true
 
 ---
-Bayramınız Mübarək. Bügün Şəbəkə profili (Network profile) 2 metodla əlavə edilməsi haqqında məqalə yazıb, çalışacam sizə izah edim.
+Bayramınız Mübarək. Bügün Şəbəkə profili (Network profile) 2 metodla əlavə edilməsi haqqında məqalə yazıb, çalışacağam ki, sizə izah edim.
 
 Share eləməyə unutmayın.
 
@@ -19,7 +19,7 @@ Hər bir "source" ilə istifadə edərək imtahana hazırlaşmalısınız.
 
 ### Context
 
-Asghar Ghorinin əlbətdə bütün kitabını bura yerləşdirəsi deyiləm, bu müəlifin hüquqlarını taptalıyır və [kitabı](https://www.amazon.com/RHCSA-Red-Hat-Enterprise-Linux/dp/1775062120) ona görə də alib istifadə etmık lazımdır.
+Asghar Ghorinin, əlbəttə, bütün kitabını bura yerləşdirəsi deyiləm, bu müəllif hüquqlarını pozur və [kitabı](https://www.amazon.com/RHCSA-Red-Hat-Enterprise-Linux/dp/1775062120) ona görə də alıb istifadə etmək lazımdır.
 
 ### Başlayaq
 
